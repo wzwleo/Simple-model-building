@@ -28,7 +28,7 @@ def main():
         st.write(df.describe())
     # 讀取 .env 裡的 KEY
     load_dotenv()
-    API_KEY = os.getenv("GROQ_API_KEY")
+    API_KEY = os.environ.get("GROQ_API_KEY")
     
     if API_KEY is None:
         raise ValueError("請先設定 GROQ_API_KEY")
