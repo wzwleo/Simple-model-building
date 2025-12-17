@@ -3,6 +3,8 @@ import pandas as pd
 from groq import Groq
 from sidebar import render_sidebar
 
+from dotenv import load_dotenv
+
 def main():
     
     st.set_page_config(layout="wide")
