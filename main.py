@@ -1,5 +1,8 @@
 import streamlit as st
 import pandas as pd
+from sidebar import render_sidebar
+
+render_sidebar()
 
 st.title("簡易模型建置")
 st.write("___")
@@ -18,4 +21,4 @@ if uploaded_file is not None:
     st.write("資料統計摘要：")
     st.write(df.describe())
   
-test = st.sidebar.button("🏠 首頁", use_container_width=True, key="home_button")
+
