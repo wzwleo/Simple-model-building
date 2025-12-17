@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 from groq import Groq
+import os
 from sidebar import render_sidebar
 
 from dotenv import load_dotenv
